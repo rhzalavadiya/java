@@ -7,33 +7,22 @@ public class DemoPerson {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-	Country c1 = new Country("India");
-	City cty = new City("Ahmedabad");
-    Person p = new Person("Pankti",c1,cty,16,100000);			
+		City c = new City();
+		c.setCname("Ahmedabad");
 		
-		System.out.println(p);
+		Country cn = new Country();
+		cn.setCname("India");
 		
-		TaxCalculation tc = new TaxCalculation();
-		tc.calcualateTax(p);
-				
+		Person p = new Person();
+		p.setPname("Yash");
 		
-		Country c2 = new Country();
-		c2.setCname("India");
+		String CityName = c.getCname();
+		String CountryName = cn.getCname();
+		String PersonName = p.getPname();
 		
-		City cty1 = new City( );
-		cty1.setCname("Anand");
-		
-	    Person p1 = new Person( );
-	    
-	    p1.setPname("Roopa");
-	    p1.setC1(c2);
-	    p1.setCty(cty1);
-	    
-	    System.out.println(p1);
-		
-		
-		
+		System.out.println("City:"  + CityName);
+		System.out.println("Country:"  + CountryName);
+		System.out.println("Person:"  + PersonName);
 	}
 
 }

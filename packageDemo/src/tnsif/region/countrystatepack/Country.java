@@ -1,34 +1,14 @@
 package tnsif.region.countrystatepack;
 
 public class Country {
-	
-	private String cname;
 
-	
-	public Country()
-	{
-		
-	}
-	
-	
-	public Country(String cname) {
-		
-		this.cname = cname;
-	}
+	private String countryname;
 
 	public String getCname() {
-		return cname;
+		return countryname;
 	}
 
-	public void setCname(String cname) {
-		this.cname = cname;
+	public void setCname(String countryname) {
+		this.countryname = countryname;
 	}
-
-	@Override
-	public String toString() {
-		return "Country [cname=" + cname + "]";
-	}
-	
-	
-
 }
